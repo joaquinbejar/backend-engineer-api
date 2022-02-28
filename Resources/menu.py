@@ -66,7 +66,6 @@ class Coffee(Resource):
         item.save_to_db()
         return item.json()
 
-
 class MenuList(Resource):
     def get(self):
         '''
