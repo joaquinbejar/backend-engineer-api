@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "a846823d-bca4-4fe7-91b7-1cf4bc83d206",
+		"name": "Basement Crowd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/coffee/mocha?price=3.25",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "asdasdasda",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/coffee/mocha?price=3.25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coffee",
+						"mocha"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "3.25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/coffee/latte",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "asdasdasda",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/coffee/latte",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coffee",
+						"latte"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/coffee/moka",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "asdasdasda",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/coffee/moka",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coffee",
+						"moka"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/coffee/latte?price=2.15",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "asdasdasda",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/coffee/latte?price=2.15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coffee",
+						"latte"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "2.15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Coffee/moka?price=2.75",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "asdasdasda",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/Coffee/moka?price=2.75",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Coffee",
+						"moka"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "2.75"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/purchase?coffee=mocha&quantity=1&creditcardnumber=2&expirydate=03/22&coffee=latte&quantity=2&coffee=cappuccino&quantity=1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "asdasdasda",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/purchase?coffee=mocha&quantity=1&creditcardnumber=2&expirydate=03/22&coffee=latte&quantity=2&coffee=cappuccino&quantity=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"purchase"
+					],
+					"query": [
+						{
+							"key": "coffee",
+							"value": "mocha"
+						},
+						{
+							"key": "quantity",
+							"value": "1"
+						},
+						{
+							"key": "creditcardnumber",
+							"value": "2"
+						},
+						{
+							"key": "expirydate",
+							"value": "03/22"
+						},
+						{
+							"key": "coffee",
+							"value": "latte"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						},
+						{
+							"key": "coffee",
+							"value": "cappuccino"
+						},
+						{
+							"key": "quantity",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/allpurchases",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/allpurchases",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"allpurchases"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

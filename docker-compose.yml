@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  node:
+    build: .
+    restart: unless-stopped
+    environment:
+      - DEBUG=True
+    ports:
+      - '8080:8080'
+    networks:
+      - net
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 600M
+        reservations:
+          memory: 128M
+    ulimits:
+      core:
+        hard: 0
+        soft: 0
+
+
+networks:
+  net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.174.51.0/24
