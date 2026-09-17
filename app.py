@@ -16,17 +16,16 @@ app.secret_key = 'basementcrowd'
 
 api = Api(app)
 
-
-@app.before_first_request
-def create_db():
-    db.create_all()
-
-
 api.add_resource(MenuList, '/menu')
 api.add_resource(Coffee, '/coffee/<string:name>')
 api.add_resource(Purchase, '/purchase')
 api.add_resource(AllPurchases, '/allpurchases')
 
 db.init_app(app)
+
+# Flask 2.3 removed before_first_request; create the schema at startup instead
+with app.app_context():
+    db.create_all()
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)

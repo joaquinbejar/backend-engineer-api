@@ -1,6 +1,6 @@
-Flask~=2.0.3
-Flask-RESTful
-Flask-SQLAlchemy
-uwsgi
-psycopg2
-sqlalchemy
+Flask~=3.1
+Flask-RESTful>=0.3
+Flask-SQLAlchemy>=3.1
+uwsgi>=2.0
+psycopg2>=2.9
+SQLAlchemy>=2.0
